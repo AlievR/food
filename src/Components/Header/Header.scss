@@ -1,0 +1,129 @@
+.app-header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.4);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 30px;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+            position: sticky;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    }
+
+    &__logo {
+        text-decoration: none;
+        color: white;
+        font-family: 'Akaya Telivigala', cursive;
+        font-size: 35px;
+    }
+
+    &__links{
+        display: flex;
+        align-items: center;
+    }
+
+    &__link{
+        color: #fff;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        transition: background-color 0.3s ease;
+        vertical-align: top;
+        position: relative;
+        display: inline-block;
+        &::after{
+            content: "";
+            display: none;
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            top: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        &:hover{
+            opacity: 0.8;
+        }
+
+        &:hover::after{
+            display: block;
+            background-color: #adadad;
+        }
+    }
+
+    &__link-active{
+        color: #fff;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        transition: background-color 0.3s ease;
+        vertical-align: top;
+        position: relative;
+        display: inline-block;
+        color: #ff9502;;  
+        &::after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #ff9502;
+        }
+        
+    }
+
+    &__basket{
+        display: flex;
+        text-decoration: none;
+        padding: 7px 20px;
+        border-radius: 10px;
+        width: 110px;
+        align-items: center;
+        border: 2px solid rgba(255,255,255,0.48);
+        transition: background-color 0.3s ease;
+
+        &-icon{
+
+            background-image: url(../../Image/Header/basket.svg); 
+            background-position: center; /* Положение фона */
+            background-repeat: no-repeat; /* Повторяем фон по горизонтали */   
+            height: 24px;
+            width: 100%;
+        }
+
+        &-text{
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            text-transform: uppercase;
+            padding-right: 7px;
+        }
+
+        &:hover{
+            opacity: 0.8;
+            border: 2px solid #ff9502;
+        }
+    }
+
+}

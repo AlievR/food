@@ -1,0 +1,33 @@
+.app-intro{
+
+
+    &__main {
+        background-image: url('../../Image/Intro.jpg');
+        min-height: 820px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+       // background-attachment: fixed;
+        height: 100vh;
+        min-height: 100%;  
+    }
+
+    &__text{
+        position: absolute;
+        left: 0;
+        top: 40%;
+        right: 0;
+        text-align: center;
+    }
+
+    &__title{
+        display: block;
+        font-family: 'Lora', serif;
+        font-weight: 400;
+        font-size: 90px;
+        color: white;
+        margin-bottom: 20px
+    }
+
+  
+}

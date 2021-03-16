@@ -1,0 +1,70 @@
+.app-banner{
+   
+
+
+    &__wrap{
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        opacity: 0.8;
+    }
+    &__intro{
+        background-image: url('../../Image/Banner/parallax.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 50vh;
+        position: relative;
+    }
+
+    &__text{
+        position: absolute;
+        top: 45%;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+    }
+
+    &__title{
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;  
+        color: #ffffff;;
+        font-size: 18px;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: .15em;
+        display: inline-block;
+        padding: 0 15px;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            top: 50%;
+            left:0;
+            background-color:#ffffff;;
+        }
+
+        &::after{
+           content: '';
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            top: 50%;
+            right:0;
+            background-color:#ffffff;;
+        }
+
+    }
+
+    &__suptitle{
+        display: block;
+        font-size: 52px;
+        font-family: 'Lora', serif;
+        font-weight: 400;;
+        color: #ffffff;
+        padding-top: 30px;
+    }
+
+}

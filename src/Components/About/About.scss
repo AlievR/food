@@ -1,0 +1,81 @@
+.app-about{
+    margin: 90px 10px;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__fone{
+        width: 30%;
+        height: 100%;
+
+        &-img{
+            width: 100%;
+        }
+    }
+
+
+
+    &__text{
+        width: 40%;
+         margin-top: 90px;
+         text-align: center;
+         padding: 0 50px;
+    }
+
+    &__cort{
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;  
+        color: #50adc6;
+        font-size: 18px;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: .15em;
+        display: inline-block;
+        padding: 0 15px;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            top: 50%;
+            left:0;
+            background-color: #50adc6;
+        }
+
+        &::after{
+           content: '';
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            top: 50%;
+            right:0;
+            background-color: #50adc6;
+        }
+
+
+    }
+
+    &__title{
+        display: block;
+        font-family: 'Great Vibes', cursive;
+        font-size: 32px;
+        padding: 20px;
+
+    }
+
+    &__suptitle{
+        display: block;
+        font-family: 'Akaya Telivigala', cursive;
+        color: #252525;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+
+
+
+}

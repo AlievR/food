@@ -1,0 +1,75 @@
+.app-comands{
+    margin: 90px 10px;
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title{
+        display: block;
+        font-family: 'Great Vibes', cursive;
+        font-size: 32px;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__card{
+        width: 25%;
+        height: 450px;
+        padding-right: 30px;
+        &-img{
+            width: 100%; 
+            border-radius: 10px;
+        }
+        &:last-child{
+            padding-right: 0;
+        }
+    }
+
+    &__atributs{
+        margin-top: 20px;
+    }
+
+    &__name{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+
+    &__position{
+        text-align: center;
+        font-family: 'Akaya Telivigala', cursive;
+        font-size: 16px;
+        color: #555555;
+    }
+
+    &__lost{
+        text-align: center;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__social{
+        border: 1px solid #e2e5e7;
+        color: #c8a97e;
+        margin-right: 10px;
+        width: 43px;
+        height: 43px;
+        display: block;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 43px;
+        font-size: 19px;
+        :hover{
+            color: orange;
+        }
+
+    }
+
+
+}
